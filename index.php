@@ -1,15 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Service Worker test - php</title>
-        <meta name="description" content="">
+        <meta name="description" content="test service worker">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="css/normalize.css">
@@ -31,11 +32,11 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
     </body>
 </html>
