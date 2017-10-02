@@ -1,9 +1,10 @@
-//importScripts('js/cache-polyfill.js');
+importScripts('js/cache-polyfill.js');
 
-var CACHE_VERSION = 'app-v2';
+var CACHE_VERSION = 'app-v3';
 var CACHE_FILES = [
     '/',
     'img/fondImage.png',
+    'img/lvdesign.png',
     'js/main.js',
     'js/vendor/modernizr-3.5.0.min.js',
     'css/main.css',
