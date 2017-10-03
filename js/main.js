@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('./basicServiceWorker.js', { scope: '/' });
+    navigator.serviceWorker.register('/basicServiceWorker.js', { scope: '/' });
   }
 
 
