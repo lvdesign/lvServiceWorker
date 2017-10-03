@@ -7,14 +7,13 @@
 
     // Update 'version' if you need to refresh the cache
     var staticCacheName = 'static';
-    var version = 'v1::';
+    var version = 'v1::n';
 
     // Store core files in a cache (including a page to display when offline)
     function updateStaticCache() {
         return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
-                    '/',
                     'img/fondImage.png',
                     'img/lvdesign.png',
                     'js/main.js',
@@ -22,6 +21,7 @@
                     'css/main.css',
                     'css/normalize.css',
                     'https://fonts.googleapis.com/css?family=Roboto:100',
+                    '/',
                     '/offline.html'
                 ]);
             });
