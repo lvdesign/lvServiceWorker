@@ -1,4 +1,12 @@
 if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/basicServiceWorker.js', {
+      scope: '/'
+    });
+  }
+
+
+/*
+if (navigator.serviceWorker) {
     navigator.serviceWorker.register('./serviceworkerAdactio.js', {scope: '/'})
         .then(function (registration) {
             console.log(registration);
@@ -9,3 +17,4 @@ if (navigator.serviceWorker) {
 } else {
     console.log('Service Worker is not supported in this browser.')
 }
+*/

@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v1.17::';
+const version = 'v1.01::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -12,7 +12,8 @@ const cacheList = [
 ];
 
 const offlinePages = [
-    '/'
+    '/',
+    '/offline'
 
 ];
 
@@ -25,14 +26,13 @@ function updateStaticCache() {
             ].concat(offlinePages));
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
-                '/',
                 'img/fondImage.png',
-                'img/lvdesign.png',
                 'js/main.js',
-                'js/vendor/modernizr-3.5.0.min.js',
                 'css/main.css',
                 'css/normalize.css',
-                'https://fonts.googleapis.com/css?family=Roboto:100'
+                'https://fonts.googleapis.com/css?family=Roboto:100',
+                '/',
+                '/offline'
             ]);
         });
 }
@@ -91,7 +91,7 @@ self.addEventListener('fetch', event => {
     let url = new URL(request.url);
 
     // Ignore requests to some directories
-    if (request.url.includes('/mint') || request.url.includes('/cms')) {
+    if (request.url.includes('/any') || request.url.includes('/anotherany')) {
         return;
     }
 
