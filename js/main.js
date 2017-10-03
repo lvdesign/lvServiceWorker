@@ -1,5 +1,5 @@
-(function () {
-    'use strict';
+'use strict';
+
 if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/basicServiceWorker.js', { scope: '/' });
   }
@@ -18,5 +18,3 @@ if (navigator.serviceWorker) {
     console.log('Service Worker is not supported in this browser.')
 }
 */
-
-})();
