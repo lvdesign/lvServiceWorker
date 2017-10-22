@@ -14,15 +14,15 @@
         return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
-                    'img/fondImage.png',
-                    'img/lvdesign.png',
-                    'js/main.js',
-                    'js/vendor/modernizr-3.5.0.min.js',
-                    'css/main.css',
-                    'css/normalize.css',
+                    'lvServiceWorker/img/fondImage.png',
+                    'lvServiceWorker/img/lvdesign.png',
+                    'lvServiceWorker/js/main.js',
+                    'lvServiceWorker/js/vendor/modernizr-3.5.0.min.js',
+                    'lvServiceWorker/css/main.css',
+                    'lvServiceWorker/css/normalize.css',
                     'https://fonts.googleapis.com/css?family=Roboto:100',
-                    '/',
-                    '/offline.html'
+                    '/lvServiceWorker',
+                    'lvServiceWorker//offline.html'
                 ]);
             });
     };
