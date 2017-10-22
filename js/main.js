@@ -3,7 +3,7 @@
 
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/lvServiceWorker/basicServiceWorker.js', { scope: '/lvServiceWorker/' }).then(function(reg) {
+    navigator.serviceWorker.register('../lvServiceWorker/basicServiceWorker.js', { scope: '/lvServiceWorker/' }).then(function(reg) {
       // registration worked
       console.log('Registration succeeded. Scope is ' + reg.scope);
     }).catch(function(error) {
